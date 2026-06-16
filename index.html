@@ -292,11 +292,8 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        /* Görseli orijinal rengi olan siyah arka planla birleştiriyoruz */
         background: #0d0d0d linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)) !important;
-        /* Görseli buraya tekrar bağlıyoruz */
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('https://i.ibb.co/FT2B5XG/Whats-App-mage-2026-06-16-at-12-07-18-1.jpg') !important;
-        /* Kırpmayı önlemek için contain yapıyoruz, böylece TAHİR HOME yazısı tam sığacak */
         background-size: contain !important; 
         background-position: center center !important;
         background-repeat: no-repeat !important;
@@ -308,17 +305,17 @@ footer {
     .hero p {
         font-size: 1rem;
         display: flex;
-        flex-direction: column; /* Alt başlıkları dikey sıraya alır */
+        flex-direction: column; 
         gap: 8px;
-        margin-bottom: 35px;
+        margin-bottom: 45px; /* Mobilde yazının alt boşluğunu artırarak butonu aşağıya ittik */
     }
-    /* Nokta işaretlerini mobilde tamamen gizler */
-    .hero p span.dot {
-        display: none;
-    }
-    .btn {
+    .hero .btn {
+        margin-top: 10px; /* Butona ek olarak üst boşluk verdik */
         padding: 14px 30px;
         font-size: 0.95rem;
+    }
+    .hero p span.dot {
+        display: none;
     }
 }
 </style>
