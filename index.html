@@ -287,11 +287,19 @@ footer {
     }
     .hero {
         height: auto;
-        min-height: 85vh; /* Yüksekliği artırdık, logo tamamen sığacak */
+        min-height: 65vh; 
         padding: 60px 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+        /* Görseli orijinal rengi olan siyah arka planla birleştiriyoruz */
+        background: #0d0d0d linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)) !important;
+        /* Görseli buraya tekrar bağlıyoruz */
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('https://i.ibb.co/FT2B5XG/Whats-App-mage-2026-06-16-at-12-07-18-1.jpg') !important;
+        /* Kırpmayı önlemek için contain yapıyoruz, böylece TAHİR HOME yazısı tam sığacak */
+        background-size: contain !important; 
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
     }
     .hero h1 {
         font-size: 1.8rem;
